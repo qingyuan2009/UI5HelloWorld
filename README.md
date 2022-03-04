@@ -30,3 +30,4 @@ Install UI5 tooling:
 
     *   src: where to find the SAPUI5 core library, and load additional resource, e.g.:data-sap-ui-libs 
     *   data-sap-ui-resourceroot : We tell SAPUI5 core that resources in the rui.com.UI5HelloWorld namespace are located in the same  folder as index.html
+
