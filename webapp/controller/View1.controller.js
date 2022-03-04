@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("rui.com.UI5HelloWorld.controller.View1", {
+	return Controller.extend("sap.ui.demo.walkthrough.controller.View1", {
 		onInit: function () {
 
 		}

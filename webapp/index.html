@@ -4,17 +4,19 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>UI5HelloWorld</title>
-		<script id="sap-ui-bootstrap"
+		<script id="sap-ui-bootstrap"			
 			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
 			data-sap-ui-theme="sap_fiori_3"
-			data-sap-ui-resourceroots='{"rui.com.UI5HelloWorld": "./"}'
+			data-sap-ui-libs="sap.m"			
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+			data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
 			data-sap-ui-async="true"
-			data-sap-ui-frameOptions="trusted">
+			data-sap-ui-frameOptions="trusted"
+			data-sap-ui-resourceroots='{
+				"sap.ui.demo.walkthrough": "./"
+			}'>
 		</script>
 	</head>
-	<body class="sapUiBody">
-		<div data-sap-ui-component data-name="rui.com.UI5HelloWorld" data-id="container" data-settings='{"id" : "UI5HelloWorld"}'></div>
+	<body class="sapUiBody" id="content">
 	</body>
 </html>

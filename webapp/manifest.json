@@ -37,7 +37,7 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "rui.com.UI5HelloWorld.view.View1",
+			"viewName": "sap.ui.demo.walkthrough.view.View1",
 			"type": "XML",
 			"async": true,
 			"id": "View1"
@@ -58,7 +58,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "rui.com.UI5HelloWorld.i18n.i18n"
+					"bundleName": "sap.ui.demo.walkthrough.i18n.i18n"
 				}
 			}
 		},
@@ -72,7 +72,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "rui.com.UI5HelloWorld.view",
+				"viewPath": "sap.ui.demo.walkthrough.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false
