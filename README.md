@@ -31,3 +31,30 @@ Install UI5 tooling:
     *   src: where to find the SAPUI5 core library, and load additional resource, e.g.:data-sap-ui-libs 
     *   data-sap-ui-resourceroot : We tell SAPUI5 core that resources in the rui.com.UI5HelloWorld namespace are located in the same  folder as index.html
 
+## component configuration
+
+	Component.js 的使用
+
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<title>SAPUI5 Walkthrough</title>
+		<script
+			id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-resourceroots='{
+				"sap.ui.demo.walkthrough": "./"
+			}'
+			data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"  // initialize使用component.js
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-async="true">
+		</script>
+	</head>
+	<body class="sapUiBody" id="content">
+		// component
+		<div data-sap-ui-component data-name="sap.ui.demo.walkthrough" data-id="container" data-settings='{"id" : "walkthrough"}'></div>
+	</body>
+	</html>
+
+	

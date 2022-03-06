@@ -37,13 +37,13 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "sap.ui.demo.walkthrough.view.View1",
+			"viewName": "sap.ui.demo.walkthrough.view.App",
 			"type": "XML",
 			"async": true,
-			"id": "View1"
+			"id": "app"
 		},
 		"dependencies": {
-			"minUI5Version": "1.65.6",
+			"minUI5Version": "1.93",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
