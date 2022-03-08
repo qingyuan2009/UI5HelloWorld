@@ -16,7 +16,6 @@
 			"version": "1.40.12"
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -33,7 +32,6 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
@@ -43,7 +41,7 @@
 			"id": "app"
 		},
 		"dependencies": {
-			"minUI5Version": "1.93",
+			"minUI5Version": "1.98.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
@@ -60,35 +58,48 @@
 				"settings": {
 					"bundleName": "sap.ui.demo.walkthrough.i18n.i18n"
 				}
+			},
+			"invoice": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Invoices.json"
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
+				"type": "View",
 				"viewType": "XML",
-				"async": true,
-				"viewPath": "sap.ui.demo.walkthrough.view",
-				"controlAggregation": "pages",
+				"path": "sap.ui.demo.walkthrough.view",
 				"controlId": "app",
-				"clearControlAggregation": false
+				"controlAggregation": "pages"
 			},
-			"routes": [{
-				"name": "RouteView1",
-				"pattern": "RouteView1",
-				"target": ["TargetView1"]
-			}],
+			"routes": [
+				{
+					"pattern": "",
+					"name": "overview",
+					"target": "overview"
+				},
+				{
+					"pattern": "detail/{invoicePath}",
+					"name": "detail",
+					"target": "detail"
+				}
+			],
 			"targets": {
-				"TargetView1": {
-					"viewType": "XML",
-					"transition": "slide",
-					"clearControlAggregation": false,
-					"viewId": "View1",
-					"viewName": "View1"
+				"overview": {
+					"id": "overview",
+					"name": "Overview"
+				},
+				"detail": {
+					"id": "detail",
+					"name": "Detail"
 				}
 			}
 		}

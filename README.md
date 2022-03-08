@@ -57,4 +57,5 @@ Install UI5 tooling:
 	</body>
 	</html>
 
+## manifest.json 的使用
 	
