@@ -19,6 +19,7 @@
 		id="invoiceList"
 		class="sapUiResponsiveMargin"
 		width="auto"
+		mode="MultiSelect"
 		items="{
 			path : 'invoice>/Invoices',
 			sorter : {
@@ -31,6 +32,8 @@
 				<Title text="{i18n>invoiceListTitle}"/>
 				<ToolbarSpacer/>
 				<SearchField width="50%" search=".onFilterInvoices"/>
+				<Button icon="sap-icon://delete" text="Delete rows in UI" press="onRemoveRowsUi"/>
+                <Button icon="sap-icon://delete" text="Delete rows in Model" press="onRemoveRowsModel"/>                
 			</Toolbar>
 		</headerToolbar>
 		<columns>
